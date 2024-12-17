@@ -42,9 +42,9 @@ class LoginController{
                 message: 'Login efetuado com sucesso',
                 user: {
                     id: user.id,
-                    name: user.name,
                     email: user.email,
                     username: user.username,
+                    admin: user.admin
                 },
                 token,
 
@@ -57,4 +57,4 @@ class LoginController{
     }
 }
 
-export default new LoginController()
+export default new LoginController() 
