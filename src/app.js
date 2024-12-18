@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 
 import LoginRoute from './app/routes/LoginRoute.js'
 import RegisterRoute from './app/routes/RegisterRoute.js'
@@ -14,6 +15,7 @@ class App{
     }
 
     middleware(){
+        this.app.use(cors())
         this.app.use(express.json())
     }
 
