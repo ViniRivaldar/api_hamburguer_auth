@@ -41,10 +41,12 @@ class LoginController{
             return res.status(200).json({
                 message: 'Login efetuado com sucesso',
                 user: {
-                    id: user.id,
-                    email: user.email,
+                     id: user.id,
+                    name: user.name,
                     username: user.username,
-                    admin: user.admin
+                    email: user.email,
+                    phone_number: user.phone_number,
+                    admin: user.admin,
                 },
                 token,
 
